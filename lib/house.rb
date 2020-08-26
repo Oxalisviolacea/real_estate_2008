@@ -20,4 +20,11 @@ class House
      room.category == type
     end
   end
+
+  def area
+    rooms_area = @rooms.map do |room|
+     room.area
+    end
+    rooms_area.sum
+  end
 end
